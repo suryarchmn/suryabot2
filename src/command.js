@@ -149,7 +149,7 @@ class Command extends LineAPI {
     }
 
     setReader() {
-        this._sendMessage(this.messages, `Setpoint... type '.recheck' for lookup !`);
+        this._sendMessage(this.messages, `apa?`);
         this.removeReaderByGroup(this.messages.to);
         return;
     }
@@ -166,8 +166,8 @@ class Command extends LineAPI {
             contentType: 13,
             contentPreview: null,
             contentMetadata: 
-            { mid: 'u236b88bf1eac2b90e848a6198152e647',
-            displayName: 'Alfath Dirk' }
+            { mid: 'u845898b3d5c717941c6a5c17508acc70',
+            displayName: 'suryarchmn' }
         }
         Object.assign(this.messages,msg);
         this._sendMessage(this.messages);
