@@ -167,7 +167,7 @@ class Command extends LineAPI {
             contentPreview: null,
             contentMetadata: 
             { mid: 'u845898b3d5c717941c6a5c17508acc70',
-            displayName: 'suryarchmn' }
+            displayName: 'surya' }
         }
         Object.assign(this.messages,msg);
         this._sendMessage(this.messages);
