@@ -22,7 +22,7 @@ class LINE extends Command {
 
 
     get myBot() {
-        const bot = ['u3b257ce1497b8d24ec3708ba3ed79d46','u236b88bf1eac2b90e848a6198152e647','u763977dab29cbd6fa0cbfa9f159b768b'];
+        const bot = ['u845898b3d5c717941c6a5c17508acc70'];
         return bot; 
     }
 
@@ -126,8 +126,8 @@ class LINE extends Command {
         let receiver = messages.to;
         let sender = messages.from;
         
-        this.command('Halo', ['halo juga','ini siapa?']);
-        this.command('kamu siapa', this.getProfile.bind(this));
+        this.command('uy', ['uy jua','siapa nih?']);
+        this.command('ikam siapa?', this.getProfile.bind(this));
         this.command('.status', `Your Status: ${JSON.stringify(this.stateStatus)}`);
         this.command(`.left ${payload}`, this.leftGroupByName.bind(this));
         this.command('.speed', this.getSpeed.bind(this));
@@ -137,8 +137,8 @@ class LINE extends Command {
         this.command(`qrp ${payload}`, this.OnOff.bind(this));
         this.command(`.kickall ${payload}`,this.kickAll.bind(this));
         this.command(`.cancelall ${payload}`, this.cancelMember.bind(this));
-        this.command(`.set`,this.setReader.bind(this));
-        this.command(`.recheck`,this.rechecks.bind(this));
+        this.command(`.sur`,this.setReader.bind(this));
+        this.command(`.sider sur`,this.rechecks.bind(this));
         this.command(`.clearall`,this.clearall.bind(this));
         this.command('.myid',`Your ID: ${messages.from}`)
         this.command(`.ip ${payload}`,this.checkIP.bind(this))
